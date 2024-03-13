@@ -1,0 +1,705 @@
+/*
+COLOR PALATTE
+=============================
+    MOON YELLOW: #f4c613
+    Grey:        #212226
+    White somke: #f4f4f4
+    White:       #fff
+    Black:       #000
+==============================;*/
+
+/*======================
+GENERIC CSS for HTML &Body
+========================*/
+
+html,
+body {
+    height: 100%;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+}
+
+body {
+    color: #212226;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Times New Roman", sans-serif;
+}
+
+p {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+section {
+    background: black;
+    overflow: hidden;
+}
+
+/*======================
+CSS for Preloader
+========================*/
+#preloader {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#status {
+    background-image: url("/Images/preloader/Ghost.gif");
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+
+
+}
+
+/*======================
+Home
+========================*/
+#home {
+    background: none;
+    height: 100%;
+}
+
+#autoplay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background: url("../video/WhatsApp%20Image%202024-02-25%20at%2014.47.20_15512d8d.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+#home-overlay {
+    background-color: rgba(0, 0, 0, 0.94);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#home-content {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-inner-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#home-head h1 {
+    color: white;
+    font-size: 45px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+}
+
+#home-head h1 span {
+    color: royalblue;
+    font-weight: 700;
+}
+
+#home-paragraph p {
+    color: aliceblue;
+    font-family: "Anta", sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    margin: 8px 0 30px 0;
+}
+
+/*======================
+buttons
+========================*/
+#start-button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anta", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#start-button a {
+    position: relative;
+    background: #fff;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 32px;
+    transition: 0.5s;
+}
+
+#start-button a:hover {
+    background: var(--clr);
+    color: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 40px var(--clr)
+}
+
+#start-button a:before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+}
+
+#start-button a span {
+    position: relative;
+}
+
+#start-button a i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+#start-button a i::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background: #27282c;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+#start-button a:hover i::before {
+    width: 20px;
+    left: 20%;
+}
+
+#start-button a i::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 10px;
+    height: 4px;
+    background: #27282c;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+#start-button a:hover i::after {
+    width: 20px;
+    left: 80%;
+}
+
+
+/*======================
+Arrow down
+========================*/
+#arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    color: white;
+    font-size: 28px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: -16px;
+    z-index: 1;
+
+}
+
+#arrow-down:hover,
+#arrow-down:focus {
+    color: blue;
+}
+
+/*======================
+            Content box 
+========================*/
+.content-box-lg {
+    padding: 120px 0;
+}
+
+.content-box-md {
+    padding: 100px 0;
+}
+
+/*======================
+            VERTICAL HEADING 
+========================*/
+#about-right {
+    color: white;
+}
+
+#Vertical-Heading {
+    color: white
+}
+
+#Vertical-Heading h5 {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: 4px;
+    display: inline-block;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: relative;
+    top: 60px;
+    left: -63px;
+}
+
+#Vertical-Heading h2 {
+    margin: -6px 0 30px 18px;
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 45px;
+
+}
+
+/*======================
+            About US 1
+========================*/
+
+#about-right p {
+    font-size: 19px;
+
+}
+
+#about-bottom img {
+    margin: 0 auto;
+    display: block;
+
+}
+
+/*======================
+ABOUT US 2
+========================*/
+
+#about-2 {
+    background-color: grey;
+}
+
+.about-item {
+    background-color: white;
+    padding: 80px 30px;
+    -webkit-box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+
+}
+
+.about-item i {
+    font-size: 30px;
+    margin: 0;
+}
+
+.about-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-item hr {
+    width: 45px;
+    height: 3px;
+    background-color: royalblue;
+    margin: 0 auto;
+    border: none;
+}
+
+.about-item p {
+    margin-top: 20px;
+
+}
+
+/*======================
+Mouse hover
+========================*/
+.about-item:hover {
+    background-color: royalblue;
+
+}
+
+/*======================
+Transition
+========================*/
+.about-item,
+.about-item i,
+.about-item hr,
+.about-item h3,
+.about-item p {
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p {
+    color: whitesmoke;
+}
+
+.about-item:hover hr {
+    background-color: aliceblue;
+}
+
+/*======================
+Icon moving up while hovering
+========================*/
+.about-item:hover i {
+    transform: translateY(-20px);
+}
+
+
+/*======================
+Social media
+========================*/
+
+#team-left .Vertical-Heading {
+    min-height: 160px;
+}
+
+.you-tube {
+    margin: 3px;
+    position: relative;
+}
+
+.channel-overlay {
+    background-color: rgba(50, 50, 50, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.channel-info h6 {
+    color: royalblue;
+    font-size: 22px;
+    margin: 0;
+}
+
+.channel-info p {
+    color: aliceblue;
+    font-size: 18px;
+}
+
+.you-tube:hover .channel-overlay {
+    opacity: 1;
+}
+
+.owl-prev,
+.owl-next {
+    color: #fff;
+    /* Change this to the desired color */
+    font-size: 30px;
+    /* Increase the font size for larger arrows */
+    font-weight: bold;
+    /* Optional: Change the font size of the arrows */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(50, 50, 50, 0.9);
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Adjust the position of the arrows */
+.owl-prev {
+    left: -50px;
+    /* Change the left position as needed */
+}
+
+.owl-next {
+    right: -50px;
+    /* Change the right position as needed */
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Change the background color on hover */
+}
+
+.channel-info {
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-list {
+    padding-left: 10px;
+    /* Adjust the left padding as needed */
+}
+
+
+
+/*======================
+Social media Icons
+========================*/
+ul.social-list li {
+    display: inline-block;
+    padding: 0;
+}
+
+ul.social-list li a {
+    border: 1px solid #fff;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    color: aliceblue;
+    border-radius: 50%;
+    text-align: center;
+    /* Center the content horizontally */
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+
+    color: gray;
+    background: none;
+    font-size: 80px;
+}
+
+/*
+progress bars*/
+#progress-bar {
+    padding: 20px;
+
+}
+
+.subs {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    text-align: center;
+}
+
+.skill {
+    margin-bottom: 20px;
+
+
+}
+
+.skill h4 {
+    line-height: 62px;
+    margin: 0;
+    font-weight: normal;
+
+}
+
+.progress {
+    height: 25px;
+    border-radius: 0;
+    background-color: grey;
+
+}
+
+.progress-bar {
+    background-color: cornflowerblue;
+    position: relative;
+}
+
+.progress-bar span {
+    font-size: 11px;
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+    padding: 3px;
+    position: absolute;
+    left: 100%;
+    /* Align to the right edge of the progress bar */
+    font-weight: bold;
+    transform: translateX(-100%);
+    /* Move the text back by its own width */
+}
+
+.subs h4 {
+    color: aliceblue;
+}
+
+.progress-bar span:before {
+    content: "";
+    border-top: 8px solid black;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    bottom: 8px;
+}
+
+
+/* Statement */
+#statement {
+    background: url("../video/WhatsApp%20Image%202024-02-25%20at%2014.47.20_15512d8d.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#tech-statement {
+    color: aliceblue;
+}
+
+#progress-element {
+    background: black;
+
+}
+
+#tech-statement h3 {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 28px;
+    line-height: 45p;
+}
+
+.align-left {
+    float: left;
+    margin-right: 20px;
+    /* Adjust margin as needed */
+}
+
+.service {
+    color: aliceblue;
+}
+
+.horizontal-head {
+    margin-bottom: 80px;
+    color: aliceblue;
+}
+
+.horizontal-head h5 {
+    font-size: 35px;
+    color: royalblue;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.service span {
+    color: royalblue;
+}
+
+.horizontal-heading h2 {
+    font-size: 80px;
+    font-weight: 100;
+    line-height: 45px;
+    margin: 0;
+}
+
+.service .icon {
+    font-size: 25px;
+    margin: 0;
+    -webkit-transition: all 400ms;
+
+}
+
+.service:hover .icon {
+    color: royalblue;
+    -webkit-transform: translateX(-10px);
+
+
+}
+
+.service:hover h5 {
+    color: aliceblue;
+}
+
+
+.service h5 {
+    text-transform: uppercase;
+    color: white;
+    margin: 0 0 6px 0;
+    font-size: 12px;
+}
+
+.service p {
+    line-height: normal;
+    margin-bottom: 20px
+}
+
+
+
+
+
+.offices {
+    color: aliceblue
+}
+
+.left-side {
+
+    color: aliceblue
+}
+
+.color {
+    color: aliceblue;
+}
+
+#note h4,
+p {
+    color: aliceblue;
+}
+
+footer {
+    background: black;
+    padding: 30px;
+
+}
+
+footer p {
+    color: aliceblue;
+    line-height: 20px;
+
+}
+
+footer p span {
+
+    color: royalblue;
+}
+.about-item p{
+    color: black;
+}
+.navbar-header{
+    margin-left: 0px
+}
