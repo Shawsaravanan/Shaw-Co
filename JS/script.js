@@ -49,24 +49,33 @@ $('#start-button a').on('click', function (event) {
         });
     }
 });
-function sendEmail(){
+function sendEmail() {
+    var email = document.getElementById("email").value;
+    var from_name = document.getElementById("name").value;
+    var message = document.getElementById("message").value;
 
-	var email=document.getElementById("email").value;
-	var from_name=document.getElementById("name").value;
-	var message=document.getElementById("message").value;
-
-	var templateParams = {
+    var templateParams = {
         email: email,
         to_name: from_name,
-		message: message
-      };
+        message: message
+    };
 
-      emailjs.send('service_sn985lk', 'template_ctxj18o', templateParams)
-  .then(function(response) {
-     console.log('SUCCESS!', response.status, response.text);
-     window.alert("Sent successfully!");
-     
-  })
+    emailjs.send('service_sn985lk', 'template_ctxj18o', templateParams)
+        .then(function (response) {
+            console.log('SUCCESS!', response.status, response.text);
+            // Show the popup on successful submission
+            document.getElementById("popup").style.display = "block";
+            // Reset form fields
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+        })
+        .catch(function (error) {
+            console.error('FAILED...', error);
+            // Handle error
+        });
+}
 
-     
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
 }
