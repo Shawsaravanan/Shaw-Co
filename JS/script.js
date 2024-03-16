@@ -24,17 +24,17 @@ $(document).ready(function () {
 Progress bars
 */
 $(document).ready(function () {
-        $("#progress-element").waypoint(function () {
-            $(".progress-bar").each(function () {
-                $(this).animate({
-                    width: $(this).attr("aria-valuenow") + "%"
-                }, 3000);
-            });
-            this.destroy();
-        }, {
-            offset: 'bottom-in-view'
+    $("#progress-element").waypoint(function () {
+        $(".progress-bar").each(function () {
+            $(this).animate({
+                width: $(this).attr("aria-valuenow") + "%"
+            }, 3000);
         });
+        this.destroy();
+    }, {
+        offset: 'bottom-in-view'
     });
+});
 
 $('#start-button a').on('click', function (event) {
     if (this.hash !== '') {
@@ -49,6 +49,7 @@ $('#start-button a').on('click', function (event) {
         });
     }
 });
+
 function sendEmail() {
     var email = document.getElementById("email").value;
     var from_name = document.getElementById("name").value;
