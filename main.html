@@ -9,6 +9,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!--TITLE-->
     <title> Shaw & Co </title>
     <!--favicon-->
@@ -23,6 +24,7 @@
 
     <!--Font awesome-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="CSS/font-awesome/css/font-awesome.min.css">
@@ -30,6 +32,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"> </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("IUCrF1Evej0Pxvlt9");
+        })();
+    </script>
     <!--all css carosil files-->
     <link rel="stylesheet" href="CSS/all-carosil/owl.carousel.min.css">
     <link rel="stylesheet" href="CSS/all-carosil/owl.theme.default.min.css">
@@ -88,7 +96,7 @@
                     <p>Revolutionizing Adventure: Shaw & Co's <span> Journey Beyond Boundaries in Automobile Excellence.</span></p>
                 </div>
                 <div id="start-button">
-                    <a heref="#about" style="--clr:royalblue"><span>START NOW</span><i></i></a>
+                    <a href="#about" style="--clr:royalblue"><span>START NOW</span><i></i></a>
                 </div>
 
             </div>
@@ -270,23 +278,23 @@
         </div>
     </section>
     <!--second sec of sociaal platform-->
-    <section class="bar ">
-        <div id="progress-element text-center">
+    <section class="bar">
+        <div id="progress-element" class="text-center">
             <div class="row">
                 <div class="col-md-6">
                     <div class="subs">
                         <h4>Subscriber Count for 10K</h4>
-                        <div class="progress text-center">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                                 <span class="sr-only">60%</span>
                                 <span class="visible-percentage">60%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="subs ">
+                    <div class="subs">
                         <h4>Threads Followers for 1K</h4>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">
                                 <span class="sr-only">5%</span>
                                 <span class="visible-percentage">5%</span>
                             </div>
@@ -297,7 +305,7 @@
                     <div class="subs">
                         <h4>Photography Account Followers for 1K</h4>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: 3%;">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100">
                                 <span class="sr-only">3%</span>
                                 <span class="visible-percentage">3%</span>
                             </div>
@@ -306,7 +314,7 @@
                     <div class="subs">
                         <h4>Personal</h4>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                                 <span class="sr-only">100%</span>
                                 <span class="visible-percentage">100%</span>
                             </div>
@@ -316,6 +324,7 @@
             </div>
         </div>
     </section>
+
     <!--statement-->
     <section id="statement">
         <div class="content-box-lg">
@@ -333,6 +342,7 @@
             </div>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!--Section-->
     <section id="section">
@@ -437,7 +447,6 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ratione corrupti itaque doloribus officiis aperiam explicabo beatae sapiente nemo eaque accusantium esse eligendi dolorem molestiae quis, voluptatem dolore aut, reiciendis?</p>
                             <div class="row">
                                 <div class="col-md-6">
-
                                     <div class="form-group">
                                         <input type="text" class="form-control" id="name" placeholder="Your Name">
                                     </div>
@@ -447,23 +456,12 @@
                                         <input type="email" class="form-control" id="email" placeholder="Email address">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-
-                                    <div class="form-group">
-                                        <input type="phone" class="form-control" id="phone" placeholder="Number">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" id="subject" placeholder="Subject">
-                                    </div>
-                                </div>
                             </div>
                             <div class="form-group">
                                 <textarea class="form-control" id="message" placeholder="Message"></textarea>
                             </div>
                             <div id="start-button">
-                                <a heref="#about" style="--clr:royalblue"><span>SUBMIT</span><i></i></a>
+                                <a style="--clr:royalblue" onclick="sendEmail()"><span>SUBMIT</span><i></i></a>
                             </div>
                         </form>
                     </div>
@@ -501,10 +499,13 @@
 
 
     <!--Footerends-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Waypoint library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- Your custom JavaScript -->
 
-
-
-    <!--id is given to add a style in the file-->
+    <!--id is given to add a style in the file
+        -->
 
     <!-- Adding Jquery to HTML importamnt note is jquery library always comes first before script-->
     <script src="JS/jquery-3.7.1.js"></script>
