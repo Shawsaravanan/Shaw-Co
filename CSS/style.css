@@ -505,70 +505,50 @@ ul.social-list li a {
 
 /*
 progress bars*/
-#progress-bar {
-    padding: 20px;
-
-}
-
 .subs {
-    margin-bottom: 20px;
-}
+        margin-bottom: 20px;
+    }
 
-.progress-bar {
-    text-align: center;
-}
+    .progress-bar {
+        text-align: center;
+    }
 
-.skill {
-    margin-bottom: 20px;
+    .progress {
+        height: 25px;
+        border-radius: 0;
+        background-color: grey;
+    }
 
+    .progress-bar {
+        background-color: cornflowerblue;
+        position: relative;
+    }
 
-}
+    .progress-bar span {
+        font-size: 11px;
+        font-weight: 100;
+        font-family: "Open Sans", sans-serif;
+        padding: 3px;
+        position: absolute;
+        left: 100%;
+        /* Align to the right edge of the progress bar */
+        font-weight: bold;
+        transform: translateX(-100%);
+        /* Move the text back by its own width */
+    }
 
-.skill h4 {
-    line-height: 62px;
-    margin: 0;
-    font-weight: normal;
+    .subs h4 {
+        color: aliceblue;
+    }
 
-}
-
-.progress {
-    height: 25px;
-    border-radius: 0;
-    background-color: grey;
-
-}
-
-.progress-bar {
-    background-color: cornflowerblue;
-    position: relative;
-}
-
-.progress-bar span {
-    font-size: 11px;
-    font-weight: 100;
-    font-family: "Open Sans", sans-serif;
-    padding: 3px;
-    position: absolute;
-    left: 100%;
-    /* Align to the right edge of the progress bar */
-    font-weight: bold;
-    transform: translateX(-100%);
-    /* Move the text back by its own width */
-}
-
-.subs h4 {
-    color: aliceblue;
-}
-
-.progress-bar span:before {
-    content: "";
-    border-top: 8px solid black;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    position: absolute;
-    bottom: 8px;
-}
-
+    .progress-bar span:before {
+        content: "";
+        border-top: 8px solid black;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        position: absolute;
+        bottom: 8px;
+    }
 
 /* Statement */
 #statement {
@@ -697,9 +677,13 @@ footer p span {
 
     color: royalblue;
 }
-.about-item p{
+
+.about-item p {
     color: black;
 }
-.navbar-header{
+
+.navbar-header {
     margin-left: 0px
+        
+        
 }
